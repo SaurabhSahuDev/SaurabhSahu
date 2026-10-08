@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saurabh | Android & Linux Developer · Security Researcher</title>
+  <style>
+    :root {
+      --android-green: #3ddc84;
+      --accent-glow: rgba(61, 220, 132, 0.15);
+      --bg: #0b0f19;
+      --card-bg: #111827;
+      --border: #1f293d;
+      --text: #f3f4f6;
+      --text-muted: #9ca3af;
+      --mono: 'JetBrains Mono', 'Courier New', monospace;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2.5rem 1rem;
+    }
+    .container {
+      max-width: 780px;
+      width: 100%;
+    }
+    header {
+text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .badge {
+      font-family: var(--mono);
+      color: var(--android-green);
+      background: var(--accent-glow);
+      padding: 0.3rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      display: inline-block;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(61, 220, 132, 0.4);
+    }
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.5rem;
+    }
+    .roles {
+      color: var(--text-muted);
+      font-size: 1rem;
+      font-family: var(--mono);
+    }
+    .card {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      border: 1px solid var(--border);
+    }
+    h2 {
+      font-size: 1.25rem;
+      color: #fff;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    h2::before {
+      content: "❯";
+      color: var(--android-green);
+      font-family: var(--mono);
+      font-weight: bold;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1rem;
+    }
+    .skill-box {
+      background: #0d131f;
+      padding: 1.2rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+    .skill-box h3 {
+      font-size: 1.05rem;
+      color: var(--android-green);
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saurabh | Android & Linux Developer · Security Researcher</title>
+  <style>
+    :root {
+      --android-green: #3ddc84;
+      --accent-glow: rgba(61, 220, 132, 0.15);
+      --bg: #0b0f19;
+      --card-bg: #111827;
+      --border: #1f293d;
+      --text: #f3f4f6;
+      --text-muted: #9ca3af;
+      --mono: 'JetBrains Mono', 'Courier New', monospace;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2.5rem 1rem;
+    }
+    .container {
+      max-width: 780px;
+      width: 100%;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .badge {
+      font-family: var(--mono);
+      color: var(--android-green);
+      background: var(--accent-glow);
+      padding: 0.3rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      display: inline-block;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(61, 220, 132, 0.4);
+    }
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.5rem;
+    }
+    .roles {
+      color: var(--text-muted);
+      font-size: 1rem;
+      font-family: var(--mono);
+    }
+    .card {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      border: 1px solid var(--border);
+    }
+    h2 {
+      font-size: 1.25rem;
+      color: #fff;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    h2::before {
+      content: "❯";
+      color: var(--android-green);
+      font-family: var(--mono);
+      font-weight: bold;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1rem;
+    }
+    .skill-box {
+      background: #0d131f;
+      padding: 1.2rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+    .skill-box h3 {
+      font-size: 1.05rem;
+      color: var(--android-green);
+      margin-bottom: 0.5rem;
+    }
+    .skill-box p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .tag {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      background: #1e293b;
+      color: #cbd5e1;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+    }
+    .project-card {
+      background: #0d131f;
+      padding: 1rem;
+      border-radius: 8px;
+      border-left: 3px solid var(--android-green);
+      margin-top: 0.75rem;
+    }
+    .project-card h4 {
+      color: #fff;
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+    .project-card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+    .btn-group {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .btn {
+      padding: 0.65rem 1.25rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    .btn-primary {
+      background: var(--android-green);
+      color: #032011;
+      font-weight: 600;
+    }
+    .btn-primary:hover {
+      opacity: 0.9;
+    }
+    .btn-secondary {
+      background: #1f2937;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover {
+      background: #374151;
+    }
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 2rem;
+      font-family: var(--mono);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <span class="badge">dev:~$ whoami</span>
+      <h1>Saurabh</h1>
+      <p class="roles">Android Developer &bull; Linux Engineer &bull; Security Researcher</p>
+    </header>
+
+    <section class="card">
+      <h2>About Me</h2>
+      <p>
+        Building native Android applications with clean architecture and Material Design, 
+        maintaining custom Linux environments, and auditing mobile apps and infrastructure 
+        for security vulnerabilities.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Core Specializations</h2>
+      <div class="skills-grid">
+        <div class="skill-box">
+          <h3>Android Development</h3>
+          <p>Native mobile apps, modern UI architecture, and robust background services.</p>
+          <div class="tags">
+            <span class="tag">Kotlin</span>
+            <span class="tag">Jetpack Compose</span>
+            <span class="tag">Android Studio</span>
+            <span class="tag">REST APIs</span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <h3>Linux Systems</h3>
+          <p>Kernel setup, automation scripts, CLI tool dev, and system hardening.</p>
+          <div class="tags">
+            <span class="tag">Bash</span>
+            <span class="tag">Arch/Debian</span>
+            <span class="tag">Kernel Tweaks</span>
+            <span class="tag">Git</span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <h3>Ethical Hacking</h3>
+          <p>Mobile app penetration testing (APK analysis), network security, and exploit mitigation.</p>
+          <div class="tags">
+            <span class="tag">Frida/Objection</span>
+            <span class="tag">Burp Suite</span>
+            <span class="tag">APK Reversing</span>
+            <span class="tag">Wireshark</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Featured Work</h2>
+      <div class="project-card">
+        <h4>Android Security & System Utility Tools</h4>
+        <p>Custom open-source apps built for Android power users, system diagnostics, and offline privacy tools.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Connect & Code</h2>
+      <p>Want to collaborate on an Android project, security audit, or open-source tool?</p>
+      <div class="btn-group">
+        <a href="https://github.com" target="_blank" class="btn btn-primary">View GitHub Projects</a>
+        <a href="mailto:saurabh@example.com" class="btn btn-secondary">Get In Touch</a>
+      </div>
+    </section>
+
+    <footer>
+      <span>&copy; 2026 Saurabh &bull; Hosted with GitHub Pages</span>
+    </footer>
+  </div>
+
+</body>
+</html>￼Entermargin-bottom: 0.5rem;
+    }
+    .skill-box p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .tag {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      background: #1e293b;
+      color: #cbd5e1;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+    }
+    .project-card {
+      background: #0d131f;
+      padding: 1rem;
+      border-radius: 8px;
+      border-left: 3px solid var(--android-green);
+      margin-top: 0.75rem;
+    }
+    .project-card h4 {
+      color: #fff;
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+    .project-card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+    .btn-group {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .btn {
+      padding: 0.65rem 1.25rem;
+      border-radius: 6px;
+      text-decoration: none;
